@@ -1,81 +1,61 @@
 # Stakeholder Handover Message
-## Tech Oreon Analytica — Kenya Sentiment Analysis Prototype
+## Tech Oreon Analytica - Kenya Election Sentiment Analysis Prototype
 
----
+**Subject:** Kenya 2022 Election Discourse Sentiment Analysis - Interactive Prototype
 
-### 📧 Message to PS Office / Government Stakeholder
+Dear [Recipient Name / Office],
 
-**Subject:** Kenya Public Discourse Sentiment Analysis — Interactive Prototype (Tech Oreon Analytica)
+Please find below the link to our Kenya Election Discourse Sentiment Analysis prototype,
+developed by Tech Oreon Analytica as a working demonstration of how computational text
+analysis can support election-period monitoring and analyst brief production.
 
----
+**Live demo:** [INSERT STREAMLIT CLOUD LINK HERE]
 
-Dear [Recipient Name / PS Office],
+## What the prototype shows
 
-Please find below the link to our **Kenya Political Discourse Sentiment Analysis prototype**,
-developed by Tech Oreon Analytica as a demonstration of our analytical capability in
-computational public discourse monitoring.
+The dashboard allows a reviewer to:
 
-**🔗 Live Demo:** [INSERT STREAMLIT CLOUD LINK HERE]
-*(e.g. https://kenya-sentiment-demo.streamlit.app)*
+- filter discourse by topic, sentiment, region, event phase, source style, and date
+- inspect how sentiment changes over the election timeline
+- compare issue areas such as counting and results, voting issues, and security concerns
+- review an analyst brief with working hypotheses and investigation questions
+- test new text in a live sentiment analyzer
 
----
+## Important context
 
-### What the demo shows
+This build ships with a local project corpus aligned to documented 2022 Kenya election
+discourse patterns and a production-ready CSV workflow. It is designed to show the
+technical and analytical workflow clearly.
 
-The prototype is an interactive dashboard that analyses public discourse on five
-Kenyan political and governance topics — Elections, Economy, Security, Healthcare,
-and Governance — covering the January–August 2022 period.
+The strongest real-world replacement candidate identified during project review is the
+Uchaguzi-2022 citizen-report dataset, which is access-controlled and can be slotted into
+the same workflow once approval is secured.
 
-You can:
-- **Filter** by topic, sentiment category, region, and date range
-- **View** sentiment distribution across the full dataset
-- **Track** how sentiment shifted month-by-month over the election period
-- **Compare** average sentiment scores by topic
-- **Explore** regional discourse patterns on a topic × region heatmap
-- **Type any text** into the Live Analyser and receive an instant sentiment score
+## Supporting report
 
----
+The written report is available at:
 
-### Important context — prototype notice
+`report/kenya_sentiment_report.md`
 
-This version uses a **synthetic demonstration dataset** of 500 records built to
-reflect the structure of real Kenyan political discourse. It demonstrates *what the
-system can do* — not findings based on live data. The dashboard clearly discloses
-this at the top of every page.
+It summarizes:
 
-A production deployment connected to live data sources (Twitter/X API, news feeds,
-or public consultation submissions) can be delivered within **4–8 weeks** of
-engagement confirmation.
+- project objective
+- corpus design
+- scoring methodology
+- research footing
+- example hypotheses
+- next-step upgrade path
 
----
+## Suggested next step
 
-### Supporting report
+If you would like this prototype moved toward operational use, the next phase would be:
 
-A full technical report is attached as a PDF:
-**`Kenya_Sentiment_Analysis_Prototype_Report.pdf`**
-
-It covers: Executive Summary, Methodology, Key Findings, Strategic Relevance
-for government use cases, Limitations, and a Phased Scaling Roadmap.
-
----
-
-### Next steps
-
-We are available for a technical walkthrough at your convenience. To discuss
-production deployment, data integration options, or a scoped proposal, please
-reach out at:
-
-**[Your contact details here]**
-
-We look forward to hearing your feedback.
+1. secure approved real-world data access
+2. validate the model on a labeled Kenya election evaluation set
+3. deploy scheduled ingestion and briefing output on top of the current app
 
 Warm regards,
 
-**Tech Oreon Analytica**
-[Contact Name | Title]
+**Tech Oreon Analytica**  
+[Contact Name | Title]  
 [Email | Phone]
-
----
-
-*Prototype built with Python · VADER · Streamlit · Plotly*
-*Technical Lead: Nichodemus Werre Amollo — Georgetown University gui2de*

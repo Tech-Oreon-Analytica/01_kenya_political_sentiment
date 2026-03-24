@@ -30,3 +30,8 @@ Thumbs.db
 # data/raw/*.csv
 # data/processed/*.csv
 # outputs/
+
+# Local report rendering artifacts
+outputs/reports/.chrome-render-profile*/
+outputs/reports/*.html
+outputs/reports/*_refreshed.pdf
