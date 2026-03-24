@@ -20,7 +20,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 # ── Path setup ────────────────────────────────────────────────────────────────
-_repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+_repo_root = os.path.abspath(os.path.dirname(__file__))
 sys.path.insert(0, _repo_root)
 
 from shared.utils.text_cleaning     import clean_text

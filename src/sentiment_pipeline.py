@@ -18,7 +18,7 @@ import pandas as pd
 
 # ── Path setup: allow imports from shared utilities ───────────────────────────
 # Walks two directories up from src/ to the repo root, then into shared/
-_repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+_repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, _repo_root)
 
 from shared.utils.text_cleaning    import batch_clean

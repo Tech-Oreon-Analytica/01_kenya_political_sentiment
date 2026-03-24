@@ -1,5 +1,5 @@
 import sys, os
-sys.path.insert(0, os.path.abspath('..'))
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__) or '.'))
 
 from shared.utils.text_cleaning import clean_text, batch_clean
 from shared.utils.sentiment_helpers import score_text, classify_sentiment, score_dataframe
